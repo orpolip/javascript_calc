@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Javascript calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="calculator">
+        <div class="top">
+            <input type="button" id="c_butt" value="C" onclick='reset()'>
+            <div class="screen"><input type="text" readonly size="18" id="display"></div>
+        </div>
+
+        <div class="keys">
+            <input id="butt" type="button" value="7" onclick='v("7")'>
+            <input id="butt" type="button" value="8" onclick='v("8")'>
+            <input id="butt" type="button" value="9" onclick='v("9")'>
+            <input type="button" id="op_butt" value="+" onclick='v("+")'>
+            <input id="butt" type="button" value="4" onclick='v("4")'>
+            <input id="butt" type="button" value="5" onclick='v("5")'>
+            <input id="butt" type="button" value="6" onclick='v("6")'>
+            <input type="button" id="op_butt" value="-" onclick='v("-")'>
+            <input id="butt" type="button" value="1" onclick='v("1")'>
+            <input id="butt" type="button" value="2" onclick='v("2")'>
+            <input id="butt" type="button" value="3" onclick='v("3")'>
+            <input type="button" id="op_butt" value="/" onclick='v("/")'>
+            <input id="butt" type="button" value="0" onclick='v("0")'>
+            <input type="button" id="butt" value="." onclick='v(".")'>
+            <input type="button" id="butt" value="=" onclick='e()'>
+            <input type="button" id="op_butt" value="*" onclick='v("*")'>
+        </div>
+    </div>
+    <script src="myscript.js"></script>
+</body>
+
+</html>
