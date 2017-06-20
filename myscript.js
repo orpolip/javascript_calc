@@ -10,11 +10,15 @@ function v(val) {
     document.getElementById("display").value += val;
 }
 
-function e() {
+function percent() {
+    result(eval(document.getElementById("display").value / 100))
+}
+
+function e_math() {
     try {
         result(eval(document.getElementById("display").value))
     }
-    catch (e) {
+    catch (e_math) {
         result('Error')
     }
 }  
